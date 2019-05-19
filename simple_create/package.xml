@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package>
+  <name>simple_create</name>
+  <version>0.0.1</version>
+  <description>The simple_create package</description>
+
+  <maintainer email="jackmorrison1@gmail.com">jack</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>std_msgs</run_depend>
+</package>
