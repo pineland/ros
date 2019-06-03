@@ -27,9 +27,11 @@
 	args="-urdf -model mybot -param robot_description"/>
 
   <!-- Run RVIZ-->
-  <node name="$(anon rviz)" pkg="rviz" type="rviz" args="$(find mybot_gazebo)/mybot.rviz" output="screen"/>
-
+<!--  <node name="$(anon rviz)" pkg="rviz" type="rviz" args="$(find mybot_gazebo)/mybot.rviz" output="screen"/>
+-->
   <!-- ros_control mybot launch file -->
   <include file="$(find mybot_control)/launch/mybot_control.launch" />
 
+<!--  <node name="topicPublisher" pkg="mybot_gazebo" type="moveMyRobot.py" required="false" />
+-->
 </launch>
